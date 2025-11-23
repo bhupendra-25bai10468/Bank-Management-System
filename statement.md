@@ -3,12 +3,6 @@
 ## 1. Problem Statement
 The primary challenge in developing basic management systems is ensuring **data persistence and integrity** without relying on complex, external database infrastructure (like MySQL or PostgreSQL) for simple applications. This project addresses the need for a reliable, console-based solution to manage customer bank accounts where data must be safely stored and retrieved across multiple sessions using standard Python tools.
 
-## 2. Objectives
-* To design and implement a **modular and clean** console application for bank account management.
-* To effectively utilize Python's `json` library for durable, non-volatile data storage.
-* To demonstrate the implementation of core banking functionalities, including **CRUD operations** for accounts and detailed **transaction logging**[cite: 29].
-* To integrate essential non-functional requirements such as **error handling** and input validation for a robust user experience.
-
 ## 3. Scope of the Project
 This project focuses on the back-end logic of account management.
 * **Included:** Staff user authentication, customer account creation and deletion, balance management, transaction logging (deposit/withdrawal), and customer data retrieval.
