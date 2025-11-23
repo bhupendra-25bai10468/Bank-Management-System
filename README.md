@@ -6,6 +6,12 @@ This project is a console-based Bank Management System developed in Python. It i
 
 The system emphasizes **data persistence** by storing all user and customer information (including transaction history) in local JSON files, eliminating the need for a separate database (like MySQL) and ensuring data integrity between program runs.
 
+## 🎯 Objectives
+* To design and implement a **modular and clean** console application for bank account management.
+* To effectively utilize Python's `json` library for durable, non-volatile data storage.
+* To demonstrate the implementation of core banking functionalities, including **CRUD operations** for accounts and detailed **transaction logging**[cite: 29].
+* To integrate essential non-functional requirements such as **error handling** and input validation for a robust user experience.
+
 ## ✨ Features
 * **Secure Authentication:** User registration and 4-digit password login.
 * **Account CRUD:** Create, read (view details), and delete customer bank accounts.
