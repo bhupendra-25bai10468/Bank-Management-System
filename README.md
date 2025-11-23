@@ -21,26 +21,10 @@ The system emphasizes **data persistence** by storing all user and customer info
 
 ## 🚀 Steps to Install & Run the Project
 
-1.  **Clone the Repository:**
-    ```bash
-    git clone https://github.com/bhupendra-25bai10468/Bank-Management-System
-    cd bank_management_system
-    ```
-
-2.  **Save the Code:**
-    Ensure your Python code is saved as a single file named `bank_management_system.py` in the root directory.
-
-3.  **Run the System:**
-    Execute the Python file from your terminal:
-    ```bash
-    python bank_management_system.py
-    ```
-
-4.  **Start Interaction:**
-    Follow the on-screen prompts:
-    * Start by choosing **1. REGISTER** to create a staff user account.
-    * Then, choose **2. LOGIN** to access the main bank operations menu.
-
+1. Install Python
+2. Download the Project Files
+3. Run the Python Script
+   
 ## 🧪 Instructions for Testing
 To test the core functionality, perform the following steps:
 
