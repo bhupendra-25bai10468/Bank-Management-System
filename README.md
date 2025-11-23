@@ -23,7 +23,7 @@ The system emphasizes **data persistence** by storing all user and customer info
 
 1.  **Clone the Repository:**
     ```bash
-    git clone (https://github.com/bhupendra-25bai10468/Bank-Management-System)>
+    git clone (https://github.com/bhupendra-25bai10468/Bank-Management-System)
     cd bank_management_system
     ```
 
