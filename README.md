@@ -9,7 +9,7 @@ The system emphasizes **data persistence** by storing all user and customer info
 ## 🎯 Objectives
 * To design and implement a **modular and clean** console application for bank account management.
 * To effectively utilize Python's `json` library for durable, non-volatile data storage.
-* To demonstrate the implementation of core banking functionalities, including **CRUD operations** for accounts and detailed **transaction logging**[cite: 29].
+* To demonstrate the implementation of core banking functionalities, including **CRUD operations** for accounts and detailed **transaction logging**.
 * To integrate essential non-functional requirements such as **error handling** and input validation for a robust user experience.
 
 ## ✨ Features
