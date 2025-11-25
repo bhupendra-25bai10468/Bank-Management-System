@@ -1,43 +1,85 @@
-## 🌟 Bank Management System
-**Simple Console-Based Bank Management System**
+# Bank Management System
 
-## 📖 Overview of the Project
-This project is a console-based Bank Management System developed in Python. It is designed to simulate the core operations of a small banking environment, allowing users (bank staff) to register, log in, create new customer accounts, manage deposits, withdrawals, and transaction details.
+## Overview
 
-The system emphasizes **data persistence** by storing all user and customer information (including transaction history) in local JSON files, eliminating the need for a separate database (like MySQL) and ensuring data integrity between program runs.
+This is a modular, console-based Bank Management System developed in Python. The application simulates essential operations in a banking environment, providing secure authentication, customer account management, transaction processing, error handling, and persistent data storage using JSON files.
 
-## 🎯 Objectives
-* To design and implement a **modular and clean** console application for bank account management.
-* To effectively utilize Python's `json` library for durable, non-volatile data storage.
-* To demonstrate the implementation of core banking functionalities, including **CRUD operations** for accounts and detailed **transaction logging**.
-* To integrate essential non-functional requirements such as **error handling** and input validation for a robust user experience.
+## Problem Statement
 
-## ✨ Features
-* **Secure Authentication:** User registration and 4-digit password login.
-* **Account CRUD:** Create, read (view details), and delete customer bank accounts.
-* **Transaction Handling:** Process withdrawals and deposits with balance validation.
-* **Reporting:** View current customer details and a detailed history of all transactions for any account.
-* **Data Persistence:** All customer and transaction data is stored in `customer_data.json` and `user_data.json`.
+The project demonstrates core banking operations without using an external database, focusing on practical file I/O, modular programming, and thorough input validation.
 
-## 🛠️ Technologies/Tools Used
-* **Core Language:** Python 3.x
-* **Data Handling:** `json` module for persistent data storage.
-* **Utilities:** `datetime` and `os` modules.
-* **Version Control:** Git
+## Features
 
-## 🚀 Steps to Install & Run the Project
+- Secure staff registration and login
+- Customer account creation, viewing, and deletion
+- Deposit and withdrawal processing with balance checks
+- Detailed transaction history per account
+- Persistent data using JSON files
+- User-friendly, menu-driven console interface
 
-1. Install Python
-2. Download the Project Files
-3. Run the Python Script
-   
-## 🧪 Instructions for Testing
-To test the core functionality, perform the following steps:
+## Functional Requirements
 
-1.  **Account Creation (Test CRUD: Create):** Create a new account and verify that the initial deposit is correctly recorded.
-2.  **Deposit (Test Transaction):** Add an amount and use option 3 (Customer Details) to verify the balance has increased.
-3.  **Withdrawal (Test Transaction & Error Handling):** Attempt a withdrawal.
-    * Test a valid withdrawal.
-    * Test an invalid withdrawal amount (greater than the balance) to confirm the **insufficient funds** error message.
-4.  **Transaction History (Test Reporting):** Use option 4 (Transaction Details) to view the history and confirm all deposits and withdrawals are logged correctly.
-5.  **Data Persistence (Test Reliability):** Run the program, perform a transaction, then quit (option 6), and restart the program. Log in and verify that the balance and transaction history are unchanged.
+- Staff registration and 4-digit password login
+- CRUD operations for customer accounts
+- Deposit and withdrawal transactions
+- Customer details viewing
+- Transaction logs for every account
+- Account deletion
+
+## Non-Functional Requirements
+
+- **Reliability:** Data persists between runs via JSON files
+- **Error Handling:** Input validation for all critical fields
+- **Usability:** Simple menu navigation flow
+- **Maintainability:** Modular code layout for future enhancements
+
+## System Architecture
+
+Three-tier modular design:
+- **Presentation:** `mainapp.py` (UI and menu flow)
+- **Business Logic:** `accountmanager.py` (auth/CRUD), `transactionmanager.py` (transactions/reports)
+- **Data Access:** `datamanager.py` (JSON file I/O)
+- **Data Storage:** `userdata.json`, `customerdata.json`
+  
+
+## Design Diagrams
+
+- **Use Case Diagram:** Shows main user flows (register, login, manage accounts, perform transactions)
+- **Workflow Diagram:** Visualizes menu choices and program logic
+- **Sequence Diagram:** Describes the steps during deposit/withdrawal transactions
+- **Class/Component Diagram:** Highlights code modules and relationships
+- **ER Diagram:** Shows tables (users, customers, transactions)
+
+
+## Installation
+
+1. Install Python 3.x
+2. Clone this repository:
+git clone https://github.com/bhupendra-25bai10468/Bank-Management-System.git
+3. Navigate to the project folder and run:
+python mainapp.py
+
+## Instructions for Testing
+
+- Register a staff user and log in
+- Create a customer account, verify addition
+- Perform valid and invalid deposits/withdrawals
+- View customer details and transaction logs
+- Exit and restart the program to verify data persistence
+- Delete accounts to test removal
+
+
+## Future Enhancements
+
+- Interest calculation for savings accounts
+- Account-to-account transfers
+- Upgrade interface with a simple GUI (Tkinter/PyQt)
+- Enhanced password security (hashing/encryption)
+
+## References
+
+- [Python 3 Documentation](https://docs.python.org/3)
+- Real Python Tutorials
+- VITyarthi Project Guidelines
+- Course resources
+
